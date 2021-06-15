@@ -9,8 +9,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Component
 public class MyRoundLoadBalance implements MyLoadBalance {
 
-    private AtomicInteger atomicInteger =new AtomicInteger(0);
-    private  final int getAndIncrement(){
+    private final AtomicInteger atomicInteger =new AtomicInteger(0);
+    private int getAndIncrement(){
         int cur;
         int next;
         do{

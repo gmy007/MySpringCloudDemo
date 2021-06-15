@@ -50,7 +50,7 @@ public class OrderController {
         else return entity.getBody();
     }
 
-    @GetMapping("/consumer/payment/testMylb")
+    @GetMapping("/consumer/payment/testMyLb")
     public CommonResult<Payment> testMyLb(){
         List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PAYMENT-SERVICE");
         if(instances==null||instances.size()<=0)
